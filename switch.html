@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>
+        <title> JS Color-Text Function </title>
+    </head>
+ <body>
+    Type color name: <input type="text" name="text1" id="input1" placeholder="Type color name">
+    <button type="button" onclick="col();"></button>
+    <p id="p1"></p>
+<script>
+     function col(){
+     color = document.getElementById("input1").value;
+        switch (color)
+        {
+            case "red": color = document.getElementById("p1").innerHTML = "You have choosen Red Color.";
+            document.getElementById("p1").style.color = "red";
+                          break;
+            case "green": color = document.getElementById("p1").innerHTML = "You have choosen Green Color.";  
+                          break;
+            case "blue": color = document.getElementById("p1").innerHTML = "You have choosen Blue Color.";  
+                          break;
+            case "pink": color = document.getElementById("p1").innerHTML = "You have choosen Pink Color.";  
+                          break;
+            case "yellow": color = document.getElementById("p1").innerHTML = "You have choosen Yellow Color.";  
+                          break;
+            case "orange": color = document.getElementById("p1").innerHTML = "You have choosen Orange Color.";  
+                          break;
+            default: document.write("You are at the Default color." + "<br>"); 
+        }
+    }                     
+            
+    </script>
+        
+</body>
+</html>
